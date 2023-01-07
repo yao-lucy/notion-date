@@ -1,1 +1,6 @@
-<iframe src="https://free.timeanddate.com/clock/i8o0s71s/n3345/tt1/tw0" frameborder="0" width="129" height="18"></iframe>
+<style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); </style>
+<span id="today" style="font-family: Roboto; font-size:40px"></span>
+<script>
+  today.textContent = (new Intl.DateTimeFormat("en-US", {
+    day: "numeric", month: "long", year: "numeric", timeZone: "America/New_York"})).format(new Date);
+</script>
