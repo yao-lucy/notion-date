@@ -1,5 +1,8 @@
-<style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); </style>
-<span id="today" style="font-family: Roboto; font-size:24px"></span>
+<div style = "padding-top: 10px; padding-left: 5px">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); </style>
+  <span id="today" style="font-family: Roboto; font-size:25px"></span>
+</div>
+
 <script>
   today.textContent = (new Intl.DateTimeFormat("en-US", {
     day: "numeric", month: "long", year: "numeric", timeZone: "America/New_York"})).format(new Date);
